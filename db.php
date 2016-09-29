@@ -1,7 +1,7 @@
 <?php
 
 try {
-	$pdo = new PDO("mysql:host=agriot-dev-1.cjzfegknb3zi.eu-central-1.rds.amazonaws.com;dbname=agriot_productive", 'dbroot', 'MnPiss!R00t');
+	$db = new PDO("mysql:host=agriot-dev-1.cjzfegknb3zi.eu-central-1.rds.amazonaws.com;dbname=agriot_productive", 'dbroot', 'MnPiss!R00t');
 } catch (PDOException $e) {
 	echo 'Error: ' . htmlspecialchars($e->getMessage());
 	exit();
