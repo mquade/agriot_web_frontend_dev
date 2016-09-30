@@ -1,5 +1,5 @@
 <?php
-include dbConnect.php;
+require 'dbConnect.php';
 
 $sql = "SELECT * FROM agriot_productive.users";
 $result = $db->query ( $sql );
